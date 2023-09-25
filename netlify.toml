@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"  # Specify your frontend build command here
+  publish = "frontend/dist"  # Replace with the path to your frontend build output
+  functions = "backend/flask-server"  # Path to your Flask server directory
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200

@@ -33,6 +33,7 @@ const NavBarContainer = styled.div`
   padding: 8px;
   padding-left: 40px;
   padding-right: 40px;
+  z-index: 1000;
   background-color: rgba(245, 245, 247, 0.7);
   border-bottom: 1px solid #D6D6D6;
   -webkit-backdrop-filter: blur(3px);
